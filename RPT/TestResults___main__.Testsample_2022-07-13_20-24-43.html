@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unittest Results</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="text-capitalize">Unittest Results</h2>
+                <p class='attribute'><strong>Start Time: </strong>2022-07-13 20:24:43</p>
+                <p class='attribute'><strong>Duration: </strong>70.55 s</p>
+                <p class='attribute'><strong>Summary: </strong>Total: 1, Pass: 0, Error: 1</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>__main__.Testsample</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_amazon</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">WebDriverException: Message: unknown error: cannot determine loading status
+from unknown error: unexpected command response
+  (Session info: chrome=103.0.5060.114)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00C756B3+2184883]
+	Ordinal0 [0x00C0E5F1+1762801]
+	Ordinal0 [0x00B23DA8+802216]
+	Ordinal0 [0x00B171FE+750078]
+	Ordinal0 [0x00B1673A+747322]
+	Ordinal0 [0x00B15D1F+744735]
+	Ordinal0 [0x00B14C08+740360]
+	Ordinal0 [0x00B15208+741896]
+	Ordinal0 [0x00B1F163+782691]
+	Ordinal0 [0x00B29FCB+827339]
+	Ordinal0 [0x00B2D320+840480]
+	Ordinal0 [0x00B154D6+742614]
+	Ordinal0 [0x00B29C07+826375]
+	Ordinal0 [0x00B7D292+1168018]
+	Ordinal0 [0x00B6C926+1100070]
+	Ordinal0 [0x00B46EA0+945824]
+	Ordinal0 [0x00B47D96+949654]
+	GetHandleVerifier [0x00F14192+2704034]
+	GetHandleVerifier [0x00F0687D+2648461]
+	GetHandleVerifier [0x00D0119A+529066]
+	GetHandleVerifier [0x00D00006+524566]
+	Ordinal0 [0x00C14F2B+1789739]
+	Ordinal0 [0x00C19978+1808760]
+	Ordinal0 [0x00C19A65+1808997]
+	Ordinal0 [0x00C22A01+1845761]
+	BaseThreadInitThunk [0x759DFA29+25]
+	RtlGetAppContainerNamedObjectPath [0x76FA7A9E+286]
+	RtlGetAppContainerNamedObjectPath [0x76FA7A6E+238]
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:\Users\Admin\CGunittest\naveen.py", line 44, in test_amazon
+    self.driver.find_element(by=By.XPATH, value=" //input[@id='nav-search-submit-button']").click()
+  File "C:\Users\Admin\CGunittest\venv\lib\site-packages\selenium\webdriver\remote\webelement.py", line 88, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\Admin\CGunittest\venv\lib\site-packages\selenium\webdriver\remote\webelement.py", line 396, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\Admin\CGunittest\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 435, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\Admin\CGunittest\venv\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 247, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: cannot determine loading status
+from unknown error: unexpected command response
+  (Session info: chrome=103.0.5060.114)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00C756B3+2184883]
+	Ordinal0 [0x00C0E5F1+1762801]
+	Ordinal0 [0x00B23DA8+802216]
+	Ordinal0 [0x00B171FE+750078]
+	Ordinal0 [0x00B1673A+747322]
+	Ordinal0 [0x00B15D1F+744735]
+	Ordinal0 [0x00B14C08+740360]
+	Ordinal0 [0x00B15208+741896]
+	Ordinal0 [0x00B1F163+782691]
+	Ordinal0 [0x00B29FCB+827339]
+	Ordinal0 [0x00B2D320+840480]
+	Ordinal0 [0x00B154D6+742614]
+	Ordinal0 [0x00B29C07+826375]
+	Ordinal0 [0x00B7D292+1168018]
+	Ordinal0 [0x00B6C926+1100070]
+	Ordinal0 [0x00B46EA0+945824]
+	Ordinal0 [0x00B47D96+949654]
+	GetHandleVerifier [0x00F14192+2704034]
+	GetHandleVerifier [0x00F0687D+2648461]
+	GetHandleVerifier [0x00D0119A+529066]
+	GetHandleVerifier [0x00D00006+524566]
+	Ordinal0 [0x00C14F2B+1789739]
+	Ordinal0 [0x00C19978+1808760]
+	Ordinal0 [0x00C19A65+1808997]
+	Ordinal0 [0x00C22A01+1845761]
+	BaseThreadInitThunk [0x759DFA29+25]
+	RtlGetAppContainerNamedObjectPath [0x76FA7A9E+286]
+	RtlGetAppContainerNamedObjectPath [0x76FA7A6E+238]
+
+C:\Users\Admin\CGunittest\naveen.py:12: DeprecationWarning: executable_path has been deprecated, please pass in a Service object
+  self.driver = webdriver.Chrome(executable_path="C:/chromedrive/chromedriver.exe")
+C:\Users\Admin\CGunittest\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py:926: UserWarning: name used for saved screenshot does not match file type. It should end with a `.png` extension
+  warnings.warn("name used for saved screenshot does not match file "
+</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 1, Pass: 0, Error: 1 -- Duration: 70.55 s
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('td').on('click', '.btn', function(e){
+                e.preventDefault();
+                e.stopImmediatePropagation();
+                var $this = $(this);
+                var $nextRow = $this.closest('tr').next('tr');
+                $nextRow.slideToggle("fast");
+                $this.text(function(i, text){
+                    if (text === 'View') {
+                        return 'Hide';
+                    } else {
+                        return 'View';
+                    };
+                });
+            });
+        });
+    </script>
+</body>
+</html
